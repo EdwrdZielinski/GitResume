@@ -70,7 +70,7 @@
 
  **Illustration 2**
  * Shows the Shop on the left and the Vendor on the right.  The vendor has just clicked the 'Mark as Delivered' button which changes their view back to order mode. The shop view changes to show the inventory change of more product sold and the current delivery in progress is set to Null.
-
+ ![IMAGE](RDMEimg/OrderMarkedasDelivered2.png) 
 
 
 ##  Scalability
