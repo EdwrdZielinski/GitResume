@@ -66,6 +66,8 @@
 * Shows the Shop on the left and the Vendor on the right.  The vendor has just ordered 15 Sandwiches and 5 pounds of coffee, so the shop sees this in the Current Delivery line.  The Vendor can see the clock counting down for the time it takes to get from Downtown Crossing to Ashmont.
 ![IMAGE](RDMEimg/CurrentOrderPendingDelivery.png) 
 
+![IMAGE](RDMEimg/CurrentOrderPendingDelivery.png)
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;From here the vendor would mark the the order as delivered, so the 'Current Delivery' is set to NULL, at this point the JaviScript is listening for the 'click' event of the markButton and when it is true the listener named 'markButton.addEventListener('click', (event) =>' is triggered and the 'clearInterval' function is run to stop the timer. The 'timer' and 'mark' areas on the HTML are set to d-none to reset the cart view, and then the 'delivered' message is emitted back to application.py.  In the application.py the 'shop_status' function is run to update and commit the data changes to the inventory schema, and then emits the 'reset_current' back to JavaScript to reset the current line to Null. This shows the vendor there is not a current delivery in progress. See Illustration 2.
 
  **Illustration 2**
